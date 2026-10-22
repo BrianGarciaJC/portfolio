@@ -9,15 +9,17 @@
 </head>
 
 <body>
-    <header class="cabecera">
-        <h1>BG</h1>
+    <header id="header">
+        <h2 id="logo">BG</h2>
+
         <!--Barra de navegación-->
-        <nav class="navegación_superior">
-            <ul>
-                <li> <a href="#sobre-mí">Sobre mí</a> </li>
+        <nav class="nav">
+            <ul id="nav-list">
+                <li><a href="#hero">Inicio</a></li>
+                <li> <a href="#sobre-mi">Sobre mí</a> </li>
                 <li> <a href="#habilidades">Habilidades</a> </li>
-                <li> <a href="#Proyectos">Proyectos</a> </li>
-                <li> <a href="#Contacto">Contacto</a> </li>
+                <li> <a href="#proyectos">Proyectos</a> </li>
+                <li> <a href="#contacto">Contacto</a> </li>
             </ul>
 
         </nav>
@@ -27,48 +29,74 @@
 
     <main>
         <section id="hero">
-            <h2>Bienvenido a mi portafolio, soy Brian Garcia </h2>
+            <h1>¡Bienvenido a mi portafolio! soy <em>Brian Garcia</em></h1>
             <p>Explora mis proyectos y habilidades como desarrollador web.</p>
         </section>
 
         <!--Sobre mí-->
-        <section id="sobre-mí">
-            <h2>Sobre mí</h2>
-            <img id="profile-picture" src="/front-end/assets/img/profile_pic.jpg" alt="Foto de perfil profesional">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, illum? Repellat sequi consectetur laborum ipsum ab vitae a deserunt, saepe minima modi reprehenderit, omnis, ipsam nulla nemo odit similique voluptatum?</p>
+        <section id="sobre-mi">
+             <h2>Sobre mí</h2>
+            <div>
+                <img id="profile-picture" src="assets/img/profile_pic.jpg" alt="Foto de perfil profesional">
+                <p class="about_me">¡Hola! Soy una persona curiosa, organizada y apasionada por aprender y crear soluciones a través de la tecnología.
+                    <br><br>
+                 Actualmente, estoy desarrollando mis habilidades en programación web, explorando tecnologías como HTML, CSS y JavaScript para transformar ideas en experiencias digitales funcionales, intuitivas y atractivas.
+                 <br><br>
+                Me gusta comprender cómo funcionan las cosas, enfrentar nuevos desafíos y mejorar constantemente a través de la práctica. Creo que cada proyecto es una oportunidad para aprender, resolver problemas y convertir conocimientos en resultados concretos.
+                <br><br>
+                 Mi objetivo es seguir creciendo como desarrollador, participar en proyectos que me permitan aportar valor y construir soluciones que marquen una diferencia.
+                 <br><br>
+                <strong>Siempre estoy aprendiendo, construyendo y buscando nuevos desafíos.</strong>
+                </p>
+            </div>
+
+            
         </section>
 
         <!--Habilidades-->
-        <section>
-            <h2>Habilidades</h2>
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quaerat aspernatur ducimus dolorum? Cumque, illum obcaecati laudantium mollitia illo alias nisi magni similique doloribus saepe esse ab ipsa error eum.</p>
         </section>
 
         <!--Proyectos-->
-        <section>
+        <section id="proyectos">
             <h2>Proyectos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci, blanditiis fugiat magni enim, corrupti quam nemo tempora corporis vero nihil, consequatur cumque doloremque. Excepturi adipisci similique consequuntur. Quisquam, aliquid.</p>
         </section>
 
         <!--Contacto-->
-        <section>
-            <h2>Contacto</h2>
+        <section id="contacto">
+            <h2>Contáctame</h2>
             
             <form action="">
-                <fieldset></fieldset>
-                <label>Nombre </label>
-                <input type="text">
-            
-                <button>Enviar</button>
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="mensaje">Mensaje</label>
+                 <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </fieldset>
+
             </form>
         </section>
 
     </main>
 
-    <footer id="pie-de-página">
-        <a href="">LinkedIn</a>
-        <a href="">GitHub</a>
-        <a href="">Instagram</a>
+    <footer id="footer">
+        <div id="social-media"> 
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Instagram</a>
+        </div>
+       
         <p>2026 BG. Todos los derechos reservados</p>
     </footer>
 
